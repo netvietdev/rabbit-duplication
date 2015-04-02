@@ -10,9 +10,9 @@ namespace Duplication
 {
     internal class EntityDuplicator
     {
-        public T Duplicate<T>(T source) where T : IEntityClonable<T>
+        public T Duplicate<T>(T source) where T : IEntityCloneable<T>
         {
-            var setValueStrategies = source.BuildSetValueStrategies();
+            var setValueStrategies = source.SetValueStrategyBuilder.Build();
             var registeredProperties = setValueStrategies.Keys.Select(x => x.GetPropertyInfo()).ToList();
             var entityAdapter = EntityTypeAdapterCache.Current.GetEntityTypeAdapter(typeof(T));
 

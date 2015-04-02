@@ -44,8 +44,10 @@
     <Compile Include="EntityDuplicator.cs" />
     <Compile Include="EntityTypeAdapter.cs" />
     <Compile Include="Extensions\ExpressionExtension.cs" />
-    <Compile Include="Models\IEntityClonable.cs" />
+    <Compile Include="Models\IEntityCloneable.cs" />
+    <Compile Include="SetValueStrategies\Builders\ISetValueStrategyBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SetValueStrategies\CustomSetValueStrategy.cs" />
     <Compile Include="SetValueStrategies\ISetValueStrategy.cs" />
     <Compile Include="SetValueStrategies\KeepSameValueStrategy.cs" />
     <Compile Include="SetValueStrategies\ResetValueStrategy.cs" />

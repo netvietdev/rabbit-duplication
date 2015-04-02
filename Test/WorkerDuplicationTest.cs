@@ -1,6 +1,5 @@
 ﻿using Duplication.Extensions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 using Test.Model;
 
 namespace Test
