@@ -1,13 +1,13 @@
-﻿using Duplication.SetValueStrategies;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq.Expressions;
+using System.Collections.ObjectModel;
 
 namespace Test.Model
 {
     public abstract class Person
     {
         private int _age;
+        private readonly IList<Car> _cars = new List<Car>();
 
         public static int Count { get; set; }
 
@@ -25,13 +25,29 @@ namespace Test.Model
             _age = age;
         }
 
-        protected IDictionary<Expression<Func<T, object>>, ISetValueStrategy> BuildCommonSetValueStrategies<T>() where T : Person
+
+        public IReadOnlyCollection<Car> Cars
         {
-            return new Dictionary<Expression<Func<T, object>>, ISetValueStrategy>()
+            get
             {
-                {p => p.Id, new ResetValueStrategy(Guid.NewGuid())},
-                {p => p.FullName, new KeepSameValueStrategy()},
-            };
+                return new ReadOnlyCollection<Car>(_cars);
+            }
+        }
+
+        public void AddCar(Car car)
+        {
+            if (_cars.Contains(car) == false)
+            {
+                _cars.Add(car);
+            }
+        }
+
+        public void RemoveCar(Car car)
+        {
+            if (_cars.Contains(car))
+            {
+                _cars.Remove(car);
+            }
         }
     }
 }
