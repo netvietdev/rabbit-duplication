@@ -1,9 +1,14 @@
 ﻿using Duplication.Caches;
+using Duplication.Exceptions;
 using Duplication.Extensions;
 using Duplication.Models;
+using Duplication.SetValueStrategies;
+using Duplication.SetValueStrategies.Builders;
+using Duplication.SetValueStrategies.Builders.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Reflection;
 
 namespace Duplication
@@ -12,15 +17,24 @@ namespace Duplication
     {
         public T Duplicate<T>(T source) where T : IEntityCloneable<T>
         {
-            var setValueStrategies = source.SetValueStrategyBuilder.Build();
-            var registeredProperties = setValueStrategies.Keys.Select(x => x.GetPropertyInfo()).ToList();
-            var entityAdapter = EntityTypeAdapterCache.Current.GetEntityTypeAdapter(typeof(T));
+            return Duplicate(source, source.SetValueStrategyBuilder.Build());
+        }
 
+        public T Duplicate<T>(T source, ISetValueStrategyBuilder<T> overloadSetValueStrategyBuilder) where T : IEntityCloneable<T>
+        {
+            var setValueStrategies = overloadSetValueStrategyBuilder.MergeWith(source.SetValueStrategyBuilder);
+            return Duplicate(source, setValueStrategies);
+        }
+
+        private T Duplicate<T>(T source, IDictionary<Expression<Func<T, object>>, ISetValueStrategy> registeredStrategies) where T : IEntityCloneable<T>
+        {
+            var registeredProperties = registeredStrategies.Keys.Select(x => x.GetPropertyInfo()).ToList();
+            var entityAdapter = EntityTypeAdapterCache.Current.GetEntityTypeAdapter(typeof(T));
             ValidateRegisteredStrategies(entityAdapter.PublicProperties, registeredProperties);
 
             var duplicated = source.Clone();
 
-            foreach (var kvp in setValueStrategies)
+            foreach (var kvp in registeredStrategies)
             {
                 kvp.Value.SetValue(kvp.Key.GetPropertyInfo(), source, duplicated);
             }
@@ -36,7 +50,7 @@ namespace Duplication
 
             if (notRegisteredProperty != null)
             {
-                throw new ApplicationException("Not registered for property " + notRegisteredProperty.Name);
+                throw new NotRegisteredSetValueStrategyException(notRegisteredProperty);
             }
         }
     }

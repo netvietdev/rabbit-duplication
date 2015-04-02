@@ -17,7 +17,7 @@ namespace Test
             adapter.Initialize();
 
             // Assert
-            Assert.AreEqual(5, adapter.PublicProperties.Count);
+            Assert.AreEqual(6, adapter.PublicProperties.Count);
         }
     }
 }

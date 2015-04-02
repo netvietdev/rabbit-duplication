@@ -32,19 +32,18 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Caches\EntityTypeAdapterCache.cs" />
+    <Compile Include="Exceptions\NotRegisteredSetValueStrategyException.cs" />
+    <Compile Include="Exceptions\OverloadSetValueStrategyException.cs" />
     <Compile Include="Extensions\EntityDuplicationExtension.cs" />
     <Compile Include="EntityDuplicator.cs" />
     <Compile Include="EntityTypeAdapter.cs" />
     <Compile Include="Extensions\ExpressionExtension.cs" />
     <Compile Include="Models\IEntityCloneable.cs" />
+    <Compile Include="SetValueStrategies\Builders\Extensions\SetValueStrategyBuilderExtension.cs" />
     <Compile Include="SetValueStrategies\Builders\ISetValueStrategyBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SetValueStrategies\CustomSetValueStrategy.cs" />
@@ -52,6 +51,7 @@
     <Compile Include="SetValueStrategies\KeepSameValueStrategy.cs" />
     <Compile Include="SetValueStrategies\ResetValueStrategy.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

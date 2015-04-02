@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 
 namespace Test.Model.SetValueStrategies.Builders
 {
-    public class PersonSetValueStrategyBuilder<T> : ISetValueStrategyBuilder<T> where T : Person
+    public abstract class PersonSetValueStrategyBuilder<T> : ISetValueStrategyBuilder<T> where T : Person
     {
         public virtual IDictionary<Expression<Func<T, object>>, ISetValueStrategy> Build()
         {
