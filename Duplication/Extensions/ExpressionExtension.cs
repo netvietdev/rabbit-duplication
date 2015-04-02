@@ -20,7 +20,7 @@ namespace Duplication.Extensions
                 return (PropertyInfo)((MemberExpression)body2.Operand).Member;
             }
 
-            throw new NotImplementedException();
+            throw new NotSupportedException();
         }
     }
 }
