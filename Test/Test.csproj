@@ -51,6 +51,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="EntityTypeAdapterTest.cs" />
+    <Compile Include="Model\Car.cs" />
     <Compile Include="Model\Person.cs" />
     <Compile Include="Model\Worker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
