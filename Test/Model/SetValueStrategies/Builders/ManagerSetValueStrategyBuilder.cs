@@ -11,7 +11,7 @@ namespace Test.Model.SetValueStrategies.Builders
         {
             var strategies = base.Build();
 
-            strategies.Add(m => m.Staffs, new StaffCollectionSetValueStrategy());
+            strategies.Add(m => m.Staffs, new RemoveAllStaffsStrategy());
 
             return strategies;
         }
