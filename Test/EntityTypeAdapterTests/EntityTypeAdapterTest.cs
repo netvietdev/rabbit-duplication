@@ -1,8 +1,8 @@
-﻿using Duplication;
+﻿using Duplication.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Test.Model;
 
-namespace Test
+namespace Test.EntityTypeAdapterTests
 {
     [TestClass]
     public class EntityTypeAdapterTest

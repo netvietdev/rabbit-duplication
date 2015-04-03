@@ -4,9 +4,9 @@ using Duplication.SetValueStrategies.Builders.Extensions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
 using Test.Model;
-using Test.Model.SetValueStrategies.Builders;
+using Test.Model.SetValueStrategyBuilders.Manager;
 
-namespace Test
+namespace Test.SetValueStrategiesTests
 {
     [TestClass]
     public class SetValueStrategyBuilderExtensionTest

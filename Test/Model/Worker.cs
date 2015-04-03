@@ -1,7 +1,7 @@
 ﻿using Duplication.Models;
 using Duplication.SetValueStrategies.Builders;
 using System;
-using Test.Model.SetValueStrategies.Builders;
+using Test.Model.SetValueStrategyBuilders.Worker;
 
 namespace Test.Model
 {
@@ -31,7 +31,7 @@ namespace Test.Model
 
         public ISetValueStrategyBuilder<Worker> SetValueStrategyBuilder
         {
-            get { return new WorkerSetValueStrategyBuilder(); }
+            get { return new DefaultWorkerSetValueStrategyBuilder(); }
         }
     }
 }

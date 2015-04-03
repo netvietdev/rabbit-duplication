@@ -2,12 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using Test.Model.SetValueStrategies;
 
-namespace Test.Model.SetValueStrategies.Builders
+namespace Test.Model.SetValueStrategyBuilders.Manager
 {
-    public class ManagerSetValueStrategyBuilder : PersonSetValueStrategyBuilder<Manager>
+    public class ManagerSetValueStrategyBuilder : PersonSetValueStrategyBuilder<Model.Manager>
     {
-        public override IDictionary<Expression<Func<Manager, object>>, ISetValueStrategy> Build()
+        public override IDictionary<Expression<Func<Model.Manager, object>>, ISetValueStrategy> Build()
         {
             var strategies = base.Build();
 

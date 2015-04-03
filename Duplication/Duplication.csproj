@@ -38,9 +38,9 @@
     <Compile Include="Caches\EntityTypeAdapterCache.cs" />
     <Compile Include="Exceptions\NotRegisteredSetValueStrategyException.cs" />
     <Compile Include="Exceptions\OverloadSetValueStrategyException.cs" />
-    <Compile Include="Extensions\EntityDuplicationExtension.cs" />
-    <Compile Include="EntityDuplicator.cs" />
-    <Compile Include="EntityTypeAdapter.cs" />
+    <Compile Include="EntityCloneableExtension.cs" />
+    <Compile Include="Models\EntityDuplicator.cs" />
+    <Compile Include="Models\EntityTypeAdapter.cs" />
     <Compile Include="Extensions\ExpressionExtension.cs" />
     <Compile Include="Models\IEntityCloneable.cs" />
     <Compile Include="SetValueStrategies\Builders\Extensions\SetValueStrategyBuilderExtension.cs" />

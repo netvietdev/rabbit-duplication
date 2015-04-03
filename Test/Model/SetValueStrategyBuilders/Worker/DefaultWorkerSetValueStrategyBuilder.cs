@@ -3,11 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace Test.Model.SetValueStrategies.Builders
+namespace Test.Model.SetValueStrategyBuilders.Worker
 {
-    public class WorkerSetValueStrategyBuilder : PersonSetValueStrategyBuilder<Worker>
+    public class DefaultWorkerSetValueStrategyBuilder : PersonSetValueStrategyBuilder<Model.Worker>
     {
-        public override IDictionary<Expression<Func<Worker, object>>, ISetValueStrategy> Build()
+        public override IDictionary<Expression<Func<Model.Worker, object>>, ISetValueStrategy> Build()
         {
             var strategies = base.Build();
 
