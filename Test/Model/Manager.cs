@@ -2,7 +2,7 @@
 using Duplication.SetValueStrategies.Builders;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using Test.Model.SetValueStrategies.Builders;
+using Test.Model.SetValueStrategyBuilders.Manager;
 
 namespace Test.Model
 {

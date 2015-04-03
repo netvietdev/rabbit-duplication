@@ -1,7 +1,6 @@
 ﻿using Duplication.Caches;
 using Duplication.Exceptions;
 using Duplication.Extensions;
-using Duplication.Models;
 using Duplication.SetValueStrategies;
 using Duplication.SetValueStrategies.Builders;
 using Duplication.SetValueStrategies.Builders.Extensions;
@@ -11,9 +10,9 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace Duplication
+namespace Duplication.Models
 {
-    internal class EntityDuplicator
+    internal sealed class EntityDuplicator
     {
         public T Duplicate<T>(T source) where T : IEntityCloneable<T>
         {

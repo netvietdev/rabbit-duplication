@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace Test.Model.SetValueStrategies.Builders
+namespace Test.Model.SetValueStrategyBuilders
 {
     public abstract class PersonSetValueStrategyBuilder<T> : ISetValueStrategyBuilder<T> where T : Person
     {

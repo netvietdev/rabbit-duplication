@@ -7,7 +7,12 @@ namespace Test.Model
     public abstract class Person
     {
         private int _age;
-        private readonly IList<Car> _cars = new List<Car>();
+        private IList<Car> _cars;
+
+        protected Person()
+        {
+            InitializeCars();
+        }
 
         public static int Count { get; set; }
 
@@ -24,7 +29,6 @@ namespace Test.Model
         {
             _age = age;
         }
-
 
         public IReadOnlyCollection<Car> Cars
         {
@@ -48,6 +52,11 @@ namespace Test.Model
             {
                 _cars.Remove(car);
             }
+        }
+
+        public void InitializeCars()
+        {
+            _cars = new List<Car>();
         }
     }
 }
