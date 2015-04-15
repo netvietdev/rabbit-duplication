@@ -1,16 +1,16 @@
-﻿using Duplication.Caches;
-using Duplication.Exceptions;
-using Duplication.Extensions;
-using Duplication.SetValueStrategies;
-using Duplication.SetValueStrategies.Builders;
-using Duplication.SetValueStrategies.Builders.Extensions;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
+using Rabbit.Duplication.Caches;
+using Rabbit.Duplication.Exceptions;
+using Rabbit.Duplication.Extensions;
+using Rabbit.Duplication.SetValueStrategies;
+using Rabbit.Duplication.SetValueStrategies.Builders;
+using Rabbit.Duplication.SetValueStrategies.Builders.Extensions;
 
-namespace Duplication.Models
+namespace Rabbit.Duplication.Models
 {
     internal sealed class EntityDuplicator
     {

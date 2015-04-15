@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Duplication.Models;
+using Rabbit.Duplication.Models;
 
-namespace Duplication.Caches
+namespace Rabbit.Duplication.Caches
 {
     internal class EntityTypeAdapterCache
     {

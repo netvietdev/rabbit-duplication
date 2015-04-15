@@ -1,6 +1,6 @@
 ﻿using System.Linq;
-using Duplication;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Rabbit.Duplication;
 using Test.Model;
 using Test.Model.SetValueStrategyBuilders.Worker;
 

@@ -72,12 +72,11 @@
     <Compile Include="WorkerDuplicationTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Duplication\Duplication.csproj">
+    <ProjectReference Include="..\Rabbit.Duplication\Rabbit.Duplication.csproj">
       <Project>{18d5f2de-062a-4454-b31e-de132606d45b}</Project>
-      <Name>Duplication</Name>
+      <Name>Rabbit.Duplication</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

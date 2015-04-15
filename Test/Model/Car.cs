@@ -1,6 +1,6 @@
-﻿using Duplication.Models;
-using Duplication.SetValueStrategies.Builders;
-using System;
+﻿using System;
+using Rabbit.Duplication.Models;
+using Rabbit.Duplication.SetValueStrategies.Builders;
 using Test.Model.SetValueStrategyBuilders.Car;
 
 namespace Test.Model

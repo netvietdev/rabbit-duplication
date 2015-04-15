@@ -2,7 +2,7 @@
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace Duplication.Extensions
+namespace Rabbit.Duplication.Extensions
 {
     public static class ExpressionExtension
     {

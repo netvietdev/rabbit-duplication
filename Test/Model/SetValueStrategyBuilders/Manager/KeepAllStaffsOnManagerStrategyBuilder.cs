@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using Duplication.SetValueStrategies;
+using Rabbit.Duplication.SetValueStrategies;
 
 namespace Test.Model.SetValueStrategyBuilders.Manager
 {

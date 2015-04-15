@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace Duplication.SetValueStrategies.Builders
+namespace Rabbit.Duplication.SetValueStrategies.Builders
 {
     public interface ISetValueStrategyBuilder<T>
     {

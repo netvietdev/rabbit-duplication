@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 
-namespace Duplication.Exceptions
+namespace Rabbit.Duplication.Exceptions
 {
     public class NotRegisteredSetValueStrategyException : Exception
     {
