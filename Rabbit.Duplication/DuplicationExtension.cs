@@ -5,7 +5,7 @@ using Rabbit.Duplication.SetValueStrategies.Builders;
 
 namespace Rabbit.Duplication
 {
-    public static class EntityCloneableExtension
+    public static class DuplicationExtension
     {
         /// <summary>
         /// Duplicate an entity with default strategies configured in its type.
