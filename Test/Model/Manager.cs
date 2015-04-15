@@ -1,7 +1,7 @@
-﻿using Duplication.Models;
-using Duplication.SetValueStrategies.Builders;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using Rabbit.Duplication.Models;
+using Rabbit.Duplication.SetValueStrategies.Builders;
 using Test.Model.SetValueStrategyBuilders.Manager;
 
 namespace Test.Model

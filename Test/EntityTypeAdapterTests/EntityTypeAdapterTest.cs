@@ -1,5 +1,5 @@
-﻿using Duplication.Models;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Rabbit.Duplication.Models;
 using Test.Model;
 
 namespace Test.EntityTypeAdapterTests

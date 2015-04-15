@@ -1,5 +1,5 @@
 ﻿using System.Reflection;
-using Duplication.SetValueStrategies;
+using Rabbit.Duplication.SetValueStrategies;
 
 namespace Test.Model.SetValueStrategies
 {

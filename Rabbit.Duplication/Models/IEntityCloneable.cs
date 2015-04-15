@@ -1,6 +1,6 @@
-﻿using Duplication.SetValueStrategies.Builders;
+﻿using Rabbit.Duplication.SetValueStrategies.Builders;
 
-namespace Duplication.Models
+namespace Rabbit.Duplication.Models
 {
     public interface IEntityCloneable<T>
     {

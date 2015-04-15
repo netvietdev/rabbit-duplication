@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Duplication.Exceptions
+namespace Rabbit.Duplication.Exceptions
 {
     public class OverloadSetValueStrategyException : Exception
     {

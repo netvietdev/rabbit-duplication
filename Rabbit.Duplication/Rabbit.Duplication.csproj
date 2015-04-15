@@ -7,8 +7,8 @@
     <ProjectGuid>{18D5F2DE-062A-4454-B31E-DE132606D45B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Duplication</RootNamespace>
-    <AssemblyName>Duplication</AssemblyName>
+    <RootNamespace>Rabbit.Duplication</RootNamespace>
+    <AssemblyName>Rabbit.Duplication</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

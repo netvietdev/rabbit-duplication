@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Reflection;
 
-namespace Duplication.Models
+namespace Rabbit.Duplication.Models
 {
     internal class EntityTypeAdapter
     {

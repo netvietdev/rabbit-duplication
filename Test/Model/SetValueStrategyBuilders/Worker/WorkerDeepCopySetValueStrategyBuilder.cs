@@ -1,7 +1,7 @@
-﻿using Duplication.SetValueStrategies;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using Rabbit.Duplication.SetValueStrategies;
 using Test.Model.SetValueStrategies;
 
 namespace Test.Model.SetValueStrategyBuilders.Worker

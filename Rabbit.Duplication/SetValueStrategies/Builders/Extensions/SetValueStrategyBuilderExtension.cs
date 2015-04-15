@@ -1,10 +1,10 @@
-﻿using Duplication.Extensions;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using Rabbit.Duplication.Extensions;
 
-namespace Duplication.SetValueStrategies.Builders.Extensions
+namespace Rabbit.Duplication.SetValueStrategies.Builders.Extensions
 {
     public static class SetValueStrategyBuilderExtension
     {

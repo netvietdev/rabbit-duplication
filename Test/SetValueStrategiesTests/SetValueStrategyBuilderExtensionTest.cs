@@ -1,8 +1,8 @@
-﻿using Duplication.Extensions;
-using Duplication.SetValueStrategies;
-using Duplication.SetValueStrategies.Builders.Extensions;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
+using Rabbit.Duplication.Extensions;
+using Rabbit.Duplication.SetValueStrategies;
+using Rabbit.Duplication.SetValueStrategies.Builders.Extensions;
 using Test.Model;
 using Test.Model.SetValueStrategyBuilders.Manager;
 

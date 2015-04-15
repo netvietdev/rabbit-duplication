@@ -1,9 +1,9 @@
-﻿using Duplication.Exceptions;
-using Duplication.Models;
-using Duplication.SetValueStrategies.Builders;
-using System;
+﻿using System;
+using Rabbit.Duplication.Exceptions;
+using Rabbit.Duplication.Models;
+using Rabbit.Duplication.SetValueStrategies.Builders;
 
-namespace Duplication
+namespace Rabbit.Duplication
 {
     public static class EntityCloneableExtension
     {

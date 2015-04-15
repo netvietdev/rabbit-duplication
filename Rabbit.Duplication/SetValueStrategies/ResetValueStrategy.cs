@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace Duplication.SetValueStrategies
+namespace Rabbit.Duplication.SetValueStrategies
 {
     public class ResetValueStrategy : ISetValueStrategy
     {

@@ -1,6 +1,6 @@
-﻿using Duplication;
-using Duplication.SetValueStrategies;
-using System.Reflection;
+﻿using System.Reflection;
+using Rabbit.Duplication;
+using Rabbit.Duplication.SetValueStrategies;
 
 namespace Test.Model.SetValueStrategies
 {

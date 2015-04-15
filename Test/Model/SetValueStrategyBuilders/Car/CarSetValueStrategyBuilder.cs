@@ -1,8 +1,8 @@
-﻿using Duplication.SetValueStrategies;
-using Duplication.SetValueStrategies.Builders;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using Rabbit.Duplication.SetValueStrategies;
+using Rabbit.Duplication.SetValueStrategies.Builders;
 
 namespace Test.Model.SetValueStrategyBuilders.Car
 {
