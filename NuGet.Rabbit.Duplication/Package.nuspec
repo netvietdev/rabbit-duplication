@@ -28,7 +28,7 @@
         </group>-->
     </dependencies>
     <references></references>
-    <tags></tags>
+    <tags>Duplication</tags>
   </metadata>
   <files>
     <file src="lib\" target="lib" />
