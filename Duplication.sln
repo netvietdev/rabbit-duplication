@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.Rabbit.Duplication", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabbit.Duplication", "Rabbit.Duplication\Rabbit.Duplication.csproj", "{18D5F2DE-062A-4454-B31E-DE132606D45B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\TestConsole.csproj", "{BC6542A5-F4BC-4419-AD5A-E56AA0775187}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Model", "Test.Model\Test.Model.csproj", "{9AEAFEA0-0348-4F62-B9A2-1E4A4B3D93EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6EE2A4FE-FC47-462B-98B4-1AF9BC41D733}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,8 +31,21 @@ Global
 		{18D5F2DE-062A-4454-B31E-DE132606D45B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18D5F2DE-062A-4454-B31E-DE132606D45B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18D5F2DE-062A-4454-B31E-DE132606D45B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC6542A5-F4BC-4419-AD5A-E56AA0775187}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC6542A5-F4BC-4419-AD5A-E56AA0775187}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC6542A5-F4BC-4419-AD5A-E56AA0775187}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC6542A5-F4BC-4419-AD5A-E56AA0775187}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AEAFEA0-0348-4F62-B9A2-1E4A4B3D93EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AEAFEA0-0348-4F62-B9A2-1E4A4B3D93EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AEAFEA0-0348-4F62-B9A2-1E4A4B3D93EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AEAFEA0-0348-4F62-B9A2-1E4A4B3D93EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6CF53FE7-0599-4BC1-BBC6-0FE31E2E65AF} = {6EE2A4FE-FC47-462B-98B4-1AF9BC41D733}
+		{9AEAFEA0-0348-4F62-B9A2-1E4A4B3D93EE} = {6EE2A4FE-FC47-462B-98B4-1AF9BC41D733}
+		{BC6542A5-F4BC-4419-AD5A-E56AA0775187} = {6EE2A4FE-FC47-462B-98B4-1AF9BC41D733}
 	EndGlobalSection
 EndGlobal
